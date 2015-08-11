@@ -1,0 +1,72 @@
+
+$tablet: "(max-width: 1023px)";
+$desktop: "(max-width: 1279px)";
+$widescreen: "(min-width: 1280px)";
+
+@mixin animation ($content) {
+  -webkit-animation: $content; 
+  -moz-animation: $content;
+  -o-animation: $content;
+  animation: $content;
+} 
+@mixin animation-name ($content) {
+  -webkit-animation-name: $content; 
+  -moz-animation-name: $content;
+  -o-animation-name: $content;
+  animation-name: $content;
+} 
+@mixin animation-duration ($content) {
+  -webkit-animation-duration: $content; 
+  -moz-animation-duration: $content;
+  -o-animation-duration: $content;
+  animation-duration: $content;
+} 
+@mixin animation-delay ($content) {
+  -webkit-animation-delay: $content; 
+  -moz-animation-delay: $content;
+  -o-animation-delay: $content;
+  animation-delay: $content;
+} 
+@mixin animation-timing-function ($content) {
+  -webkit-animation-timing-function: $content; 
+  -moz-animation-timing-function: $content;
+  -o-animation-timing-function: $content;
+  animation-timing-function: $content;
+} 
+@mixin animation-iteration-count ($content) {
+  -webkit-animation-iteration-count: $content; 
+  -moz-animation-iteration-count: $content;
+  -o-animation-iteration-count: $content;
+  animation-iteration-count: $content;
+} 
+
+@mixin animation-fill-mode ($content) {
+  -webkit-animation-fill-mode: $content; 
+  -moz-animation-fill-mode: $content;
+  -o-animation-fill-mode: $content;
+  animation-fill-mode: $content;
+} 
+
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes $name {
+    @content; 
+  }
+  @-moz-keyframes $name {
+    @content;
+  }
+  @-ms-keyframes $name {
+    @content;
+  }
+  @keyframes $name {
+    @content;
+  } 
+}
